@@ -1,0 +1,84 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    //Se agrega el cuadro de texto que almacenará el resultado
+
+    // Primer numero
+
+    <EditText
+        android:id="@+id/num1"
+        android:layout_width="150dp"
+        android:layout_height="80dp"
+        android:layout_marginStart="@dimen/fab_padding"
+        android:layout_marginTop="@dimen/fab_paddingTOP"
+        android:layout_marginEnd="@dimen/fab_padding"
+        android:layout_marginBottom="@dimen/fab_padding"
+        android:hint="@string/num1"
+        android:padding="@dimen/fab_padding"
+        android:inputType="number"/>
+
+    // Segundo Numero
+
+    <EditText
+        android:id="@+id/num2"
+        android:layout_width="150dp"
+        android:layout_height="80dp"
+        android:layout_marginStart="51dp"
+        android:layout_marginTop="@dimen/fab_paddingTOP"
+        android:layout_toEndOf="@id/num1"
+        android:hint="@string/num2"
+        android:inputType="number"/>
+
+
+    //sUMAR
+
+    <Button
+        android:id="@+id/btnsuma"
+        android:layout_width="150dp"
+        android:layout_height="70dp"
+        android:layout_below="@id/num1"
+        android:layout_alignTop=""
+        android:layout_marginTop="79dp"
+        android:fontFamily="sans-serif"
+        android:text="SUMAR"
+        android:textAlignment="center"
+        android:textSize="24sp" />
+
+    //Restar
+
+    <Button
+        android:id="@+id/btnresta"
+        android:layout_width="150dp"
+        android:layout_height="70dp"
+        android:layout_below="@id/num2"
+        android:layout_marginStart="76dp"
+        android:layout_marginTop="96dp"
+
+
+        android:layout_toEndOf="@+id/btnsuma"
+        android:fontFamily="sans-serif-light"
+        android:text="RESTAR"
+        android:textAlignment="center"
+        android:textSize="24sp" />
+
+    <TextView
+        android:id="@id/respuesta"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_marginBottom="@dimen/fab_paddingTOP"
+        android:text="@string/place_holder"
+        android:textAlignment="center"
+        android:textSize="@dimen/respuesta"
+
+
+        />
+
+
+
+
+
+</RelativeLayout>

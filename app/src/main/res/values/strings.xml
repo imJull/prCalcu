@@ -1,0 +1,7 @@
+<resources>
+    <string name="app_name">calcupr</string>
+    <string name="action_settings">Settings</string>
+    <string name="place_holder">0</string>
+    <string name="num1">Inserte primer númeor</string>
+    <string name="num2">Inserte segundo numero</string>
+</resources>
